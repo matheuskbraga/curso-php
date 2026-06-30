@@ -15,15 +15,18 @@
     <main>
         <?php 
     
-    $numero = $_GET["numero"] ?? "Valor não informado!";
+    $numeroEscolhido = $_GET["numero"] ?? "Valor não informado!";
 
-    $sucessor = $numero + 1;
-    $antecessor = $numero - 1;
+    $sucessor = $numeroEscolhido + 1;
+    $antecessor = $numeroEscolhido - 1;
 
-    echo "O sucessor é " . $sucessor . ".";
+    echo "O número escolhido foi: <strong>" . $numeroEscolhido . "</strong>.";
     echo "<br>";
     echo "<br>";
-    echo "O antecessor é " . $antecessor . ".";
+    echo "O sucessor é <strong>" . $sucessor . "</strong>.";
+    echo "<br>";
+    echo "<br>";
+    echo "O antecessor é <strong>" . $antecessor . "</strong>.";
 
     ?>
     </main>
