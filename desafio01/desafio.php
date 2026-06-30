@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 1</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
@@ -15,7 +15,7 @@
     <main>
         <?php 
     
-    $numero = $_GET["numero"];
+    $numero = $_GET["numero"] ?? "Valor não informado!";
 
     $sucessor = $numero + 1;
     $antecessor = $numero - 1;
