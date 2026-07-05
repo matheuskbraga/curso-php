@@ -16,9 +16,9 @@
     <?php 
     
     // 1. Criar variáveis das para armazenar as informações do index.html
-    $nome = $_GET["nome"];
-    $sobrenome = $_GET["sobrenome"];
-    $idade = $_GET["idade"];
+    $nome = $_GET["nome"] ?? "Nenhum nome colocado!";
+    $sobrenome = $_GET["sobrenome"] ?? "Nenhum sobrenome colocado!";
+    $idade = $_GET["idade"] ?? "Nenhuma idade colocada!";
     
     echo "Olá " . $nome . " " .$sobrenome . "!";
     echo "<br><br>";
